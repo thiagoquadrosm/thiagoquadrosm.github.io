@@ -22,6 +22,13 @@ body {
 p {
     font-family: "Noto Serif", serif;
 }
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a:hover {
+	color: #555555 !important;	
+}
 h2 {
     font-family: "Archivo Black", sans-serif;
     font-size: 1.25rem;
@@ -46,8 +53,20 @@ h2 {
     margin: 0 5vw;
 }
 .lateral-menu {
+	margin: 0;
 }
-.lateral-numero {
+.lateral-menu p {
+	font-family: "Archivo Black", sans-serif;
+	font-size: 1.5rem;
+	line-height: 1;
+	display: inline;
+	margin: 0 0.1rem;
+}
+#sobre {
+	font-size: 1rem !important;
+	display: block;
+}
+.lateral-numero p {
     font-family: "Archivo Black", sans-serif;
     font-size: 10rem;
     line-height: 10rem;
@@ -92,13 +111,63 @@ h2 {
     border-top: solid 1px #fff;
     padding-top: 0.5rem;
 }
+	
+@media only screen and (max-width: 720px) {
+	.lateral {
+		float: none !important;
+		position: sticky !important;
+		width: 80vw !important;
+		padding: 0.3rem 10vw ;
+		margin: 0;
+		top: 0;
+		background: #b9beb8;
+	}
+	.lateral-menu {
+		display: inline-block;
+	}
+	.lateral-numero {
+		display: inline-block;
+	}
+	.lateral-numero p {
+		font-size: 4rem;
+		margin-right: 1rem;
+		line-height: 1;
+	}
+	.corpo {
+		grid-column: 1 / 7;
+	}
+	.corpo-citacao {
+    	grid-column: 2 / 7 !important;
+	}
+	.citacao-texto {
+		grid-column: 1 / 7;
+	}
+	.citacao-nota {
+		grid-row: 5;
+		grid-column: 1 / 4;
+	}
+}
+	
+@media only screen and (max-width: 540px) {
+	html {
+		font-size: 18px;
+	}	
+}
 </style>
 
 <body>
 <div class="container">
   <div class="lateral">
+	<div class="lateral-numero">
+		<p><a href="index.html">0</a></p>
+	</div>
     <div class="lateral-menu">
-      <p class="lateral-numero">0</p>
+		<p><a href="1.html">1</a></p>
+		<p><a href="2.html">2</a></p>
+		<p><a href="3.html">3</a></p>
+		<p><a href="4.html">4</a></p>
+		<p><a href="5.html">5</a></p>
+		<p id="sobre"><a href="sobre.html">sobre</a></p>
     </div>
   </div>
   <div class="grid">
