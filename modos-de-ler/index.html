@@ -23,11 +23,11 @@ p {
     font-family: "Noto Serif", serif;
 }
 a {
-	color: inherit;
-	text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 a:hover {
-	color: #555555 !important;	
+    color: #555555 !important;
 }
 h2 {
     font-family: "Archivo Black", sans-serif;
@@ -53,18 +53,18 @@ h2 {
     margin: 0 5vw;
 }
 .lateral-menu {
-	margin: 0;
+    margin: 0;
 }
 .lateral-menu p {
-	font-family: "Archivo Black", sans-serif;
-	font-size: 1.5rem;
-	line-height: 1;
-	display: inline;
-	margin: 0 0.1rem;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1;
+    display: inline;
+    margin: 0 0.1rem;
 }
 #sobre {
-	font-size: 1rem !important;
-	display: block;
+    font-size: 1rem !important;
+    display: block;
 }
 .lateral-numero p {
     font-family: "Archivo Black", sans-serif;
@@ -111,63 +111,89 @@ h2 {
     border-top: solid 1px #fff;
     padding-top: 0.5rem;
 }
-	
-@media only screen and (max-width: 720px) {
-	.lateral {
-		float: none !important;
-		position: sticky !important;
-		width: 80vw !important;
-		padding: 0.3rem 10vw ;
-		margin: 0;
-		top: 0;
-		background: #b9beb8;
-	}
-	.lateral-menu {
-		display: inline-block;
-	}
-	.lateral-numero {
-		display: inline-block;
-	}
-	.lateral-numero p {
-		font-size: 4rem;
-		margin-right: 1rem;
-		line-height: 1;
-	}
-	.corpo {
-		grid-column: 1 / 7;
-	}
-	.corpo-citacao {
-    	grid-column: 2 / 7 !important;
-	}
-	.citacao-texto {
-		grid-column: 1 / 7;
-	}
-	.citacao-nota {
-		grid-row: 5;
-		grid-column: 1 / 4;
-	}
+.rodape p {
+    font-family: "Archivo", sans-serif;
+    font-weight: 600;
 }
-	
+#rodape-anterior {
+    float: left;
+    display: none;
+}
+#rodape-proximo {
+    float: right;
+}
+.bibliografia {
+    margin-top: 20rem;
+	margin-bottom: 5rem;
+}
+.bibliografia hr {
+    border: solid 1px #222222;
+}
+.bibliografia h2 {
+    margin-top: 2rem;
+}
+.bibliografia p {
+	font-size: 0.9rem;
+	text-indent: -1.5rem;
+	padding-left: 1.5rem;
+}
+
+@media only screen and (max-width: 720px) {
+.lateral {
+    float: none !important;
+    position: sticky !important;
+    width: 80vw !important;
+    padding: 0.3rem 10vw;
+    margin: 0;
+    top: 0;
+    background: #b9beb8;
+}
+.lateral-menu {
+    display: inline-block;
+}
+.lateral-numero {
+    display: inline-block;
+}
+.lateral-numero p {
+    font-size: 4rem;
+    margin-right: 1rem;
+    line-height: 1;
+}
+.corpo {
+    grid-column: 1 / 7;
+}
+.corpo-citacao {
+    grid-column: 2 / 7 !important;
+}
+.citacao-texto {
+    grid-column: 1 / 7;
+}
+.citacao-nota {
+    grid-row: 5;
+    grid-column: 1 / 4;
+}
+}
+
 @media only screen and (max-width: 540px) {
-	html {
-		font-size: 18px;
-	}	
+html {
+    font-size: 18px;
+}
 }
 </style>
 
 <body>
 <div class="container">
   <div class="lateral">
-	<div class="lateral-numero">
-		<p><a href="index.html">0</a></p>
-	</div>
+    <div class="lateral-numero">
+      <p><a href="index.html">0</a></p>
+    </div>
     <div class="lateral-menu">
-		<p><a href="1.html">1</a></p>
-		<p><a href="2.html">2</a></p>
-		<p><a href="3.html">3</a></p>
-		<p><a href="4.html">4</a></p>
-		<p><a href="5.html">5</a></p>
-		<p id="sobre"><a href="sobre.html">sobre</a></p>
+      <p><a href="1.html">1</a></p>
+      <p><a href="2.html">2</a></p>
+      <p><a href="3.html">3</a></p>
+      <p><a href="4.html">4</a></p>
+      <p><a href="5.html">5</a></p>
+      <p id="sobre"><a href="sobre.html">sobre</a></p>
     </div>
   </div>
   <div class="grid">
@@ -271,23 +297,41 @@ h2 {
       <p>O ensaio se posiciona como um texto cuja ordem é daquilo que já existe. Como afirma Adorno, os esforços do ensaio &ldquo;ainda espelham a disponibilidade de quem, como uma criança, não tem vergonha de se entusiasmar pelo que os outros já fizeram&rdquo;. Ensaiar é um exercício que começa onde lhe ocorre e termina onde acredita se ter chegado ao fim. Que se entrelaça e se descontinua. O ensaio, no entanto, é limitado por aquilo que já está dado, e seu exercício de criação é subjetivo — ou seja, pertence ao âmbito do sujeito, e não do objeto.</p>
       <p>Como uma investigação e um exercício de minha própria experiência com o livro de artista, ensaiar é inevitável. É o único gênero textual que abarca e também enriquece esta proposta. Que permite que, mesmo não sendo constantemente explicitado no texto, esteja sempre implícito o meu falar, meu escrever e meu pensar.</p>
     </div>
-	  <div class="corpo-citacao">
-		  <p>O ensaio é uma escrita e um pensamento em primeira pessoa ou, melhor dizendo, uma escrita e um pensamento que estabelece uma certa relação com a primeira pessoa: que diz “eu”, mesmo não dizendo “eu”, que diz “nós” mesmo que a forma que esse “nós” adota seja um de seus maiores problemas. Além disso, a primeira pessoa não está presente necessariamente como “tema”, mas como ponto de vista, como olhar, como posição discursiva, como posição pensante.</p>
-	  </div>
-	  <div class="corpo">
-	    <p>Em seu texto sobre o gênero, chamado &ldquo;O ensaio como forma&rdquo;, Adorno deixa claro que um bom ensaio deve se debruçar, propor-se a desvendar um objeto. Desvendá-lo sabendo que qualquer proposição sobre ele, a partir do momento que for feita, estará cada vez mais longe de ser definitiva. O ensaio não procura o eterno no transitório, mas sim eternizar o que é transitório. Nesta relação, a forma ensaio se assemelha a uma maneira pela qual pode ser entendida a forma livro.</p>
-	    <p>O livro pode ser visto como uma das muitas formas que o ato de ensaiar pode tomar. Não só como suporte de um ensaio em sua forma tradicional de texto, mas também considerando que um ensaio pode tomar a forma de objeto, como numa obra de arte; como um objeto que use de sua própria linguagem para se transformar em um exercício de experiência.</p>
-	    <p>Fazer um livro sobre livros é, em sua propositura, ensaiar sobre o que é ser livro. É tornar a experiência de falar sobre o livro também a experiência de o fazer. Submeter-se às mesmas regras, jogar o mesmo jogo de oportunidades que jogam os objetos sobre os quais este trabalho se debruça.</p>
-	    <p>Como seria possível, afinal, falar do estético de modo não estético, sem qualquer proximidade com o objeto, e não sucumbir à vulgaridade intelectual nem se desviar do próprio assunto?</p>
-	    <p>Ensaio aqui sobre o livro de artista, portanto, para concluir que nada dele descobri, nada sobre ele posso propor. Experimentei-o como um entusiasta, um admirador, que algum dia quer entendê-lo, mas que nunca vai conseguir. E sabe que, exatamente por não conseguir defini-lo, capturá-lo, este ensaio para sempre poderia ser preenchido de mais e mais experiências, livros e livros, sem conseguir afirmar, com certeza, o que é um livro de artista.</p>
-	    <p>Estes ensaios foram construídos, primeiramente, por meio das experiências com os livros de artista que se encontram na Coleção Livro de Artista da Universidade Federal de Minas Gerais, o maior acervo de livros de artista no Brasil; na coleção particular Desapê, da colecionadora e comerciante de livros de artista Rita Mourão; na Coleção de Obras Raras e Especiais da Biblioteca Municipal Mário de Andrade, em São Paulo; no acervo da Biblioteca Brasiliana Guita e José Mindlin, da Universidade de São Paulo; no acervo da Biblioteca Lourival Gomes Machado, do Museu de Arte Contemporânea da Universidade de São Paulo.</p>
-	    <p>As experiências com os livros foram enriquecidas pelas conversas e entrevistas com Paulo Silveira, professor doutor no Instituto de Artes da Universidade Federal do Rio Grande do Sul e estudioso do livro de artista, autor do livro A página violada: da ternura à injúria na construção do livro de artista; Amir Brito Cadôr, professor doutor da Escola de Belas Artes da Universidade Federal de Minas Gerais e idealizador da Coleção Livro de Artista da UFMG ; Omar Khouri, professor doutor do Instituto de Artes da Universidade Estadual Paulista, poeta visual e idealizador da revista Artéria; Dora Longo Bahia, professora doutora do Departamento de Artes Visuais da Escola de Comunicações e Artes da Universidade de São Paulo e artista visual. Mário Ramiro, também professor do mesmo departamento e artista; Edith Derdyk, Lúcia M. Loeb e Fabio Morais, artistas para quem o livro é parte estruturante de suas linguagens poéticas; Luiz Vieira, idealizador e editor na Editora Ikrek, especializada em livros de artista; e Rita Mourão, que coleciona e comercializa livros de artista por meio de sua coleção Desapê.</p>
-	    <p>Estas entrevistas — apesar de não entrarem como elementos constituidores do texto, devido a uma escolha de manter um ensaio propositivo e evitar o uso da voz dos entrevistados como estratégia de justificação do que é na verdade uma voz pessoal — foram essenciais para a constituição deste trabalho e para o entendimento e imersão na relação entre artistas e livros no Brasil.</p>
-	    <p>Os ensaios foram divididos fisicamente, em livretos, e não separados em capítulos, como uma escolha formal que reflete a relação proposta entre eles. Não se tratam de capítulos de uma história contínua do livro de artista no Brasil, mas de diferentes momentos nos quais é possível enxergar uma linearidade histórica, mas que, apesar disso, se interseccionam e se complementam cronologicamente.</p>
-	    <p>Não proponho uma interpretação desta sequência de momentos como um progresso, mas sim como diferentes manifestações de relações artista-livro em que não há uma relação hierárquica. As cinco configurações descritas em cada ensaio são por si completas em sua essência, e não um momento de transição para uma configuração posterior.</p>
-	    <p>Fazer um livro sobre livros é criar uma relação complexa. Um conteúdo que fica em suspensão no próprio suporte que é descrito e analisado. Um livro que, expondo as diferentes maneiras em que o objeto livro pode ser abordado, no final aborda-o de uma ótica quase conservadora. Este livro nada mais é que um suporte de um texto que fala sobre livros. </p>
-	    <p>Seria possível, então, falar sobre livros de uma maneira em que sua forma (e sua disrupção e apropriação) seria o instrumento e a linguagem necessários para uma proposição poética sobre o que é ser um livro? Este questionamento há de ser combustível para um novo ensaio, que nessa vez não será um texto.</p>
+    <div class="corpo-citacao">
+      <p>O ensaio é uma escrita e um pensamento em primeira pessoa ou, melhor dizendo, uma escrita e um pensamento que estabelece uma certa relação com a primeira pessoa: que diz “eu”, mesmo não dizendo “eu”, que diz “nós” mesmo que a forma que esse “nós” adota seja um de seus maiores problemas. Além disso, a primeira pessoa não está presente necessariamente como “tema”, mas como ponto de vista, como olhar, como posição discursiva, como posição pensante.</p>
+    </div>
+    <div class="corpo">
+      <p>Em seu texto sobre o gênero, chamado &ldquo;O ensaio como forma&rdquo;, Adorno deixa claro que um bom ensaio deve se debruçar, propor-se a desvendar um objeto. Desvendá-lo sabendo que qualquer proposição sobre ele, a partir do momento que for feita, estará cada vez mais longe de ser definitiva. O ensaio não procura o eterno no transitório, mas sim eternizar o que é transitório. Nesta relação, a forma ensaio se assemelha a uma maneira pela qual pode ser entendida a forma livro.</p>
+      <p>O livro pode ser visto como uma das muitas formas que o ato de ensaiar pode tomar. Não só como suporte de um ensaio em sua forma tradicional de texto, mas também considerando que um ensaio pode tomar a forma de objeto, como numa obra de arte; como um objeto que use de sua própria linguagem para se transformar em um exercício de experiência.</p>
+      <p>Fazer um livro sobre livros é, em sua propositura, ensaiar sobre o que é ser livro. É tornar a experiência de falar sobre o livro também a experiência de o fazer. Submeter-se às mesmas regras, jogar o mesmo jogo de oportunidades que jogam os objetos sobre os quais este trabalho se debruça.</p>
+      <p>Como seria possível, afinal, falar do estético de modo não estético, sem qualquer proximidade com o objeto, e não sucumbir à vulgaridade intelectual nem se desviar do próprio assunto?</p>
+      <p>Ensaio aqui sobre o livro de artista, portanto, para concluir que nada dele descobri, nada sobre ele posso propor. Experimentei-o como um entusiasta, um admirador, que algum dia quer entendê-lo, mas que nunca vai conseguir. E sabe que, exatamente por não conseguir defini-lo, capturá-lo, este ensaio para sempre poderia ser preenchido de mais e mais experiências, livros e livros, sem conseguir afirmar, com certeza, o que é um livro de artista.</p>
+      <p>Estes ensaios foram construídos, primeiramente, por meio das experiências com os livros de artista que se encontram na Coleção Livro de Artista da Universidade Federal de Minas Gerais, o maior acervo de livros de artista no Brasil; na coleção particular Desapê, da colecionadora e comerciante de livros de artista Rita Mourão; na Coleção de Obras Raras e Especiais da Biblioteca Municipal Mário de Andrade, em São Paulo; no acervo da Biblioteca Brasiliana Guita e José Mindlin, da Universidade de São Paulo; no acervo da Biblioteca Lourival Gomes Machado, do Museu de Arte Contemporânea da Universidade de São Paulo.</p>
+      <p>As experiências com os livros foram enriquecidas pelas conversas e entrevistas com Paulo Silveira, professor doutor no Instituto de Artes da Universidade Federal do Rio Grande do Sul e estudioso do livro de artista, autor do livro A página violada: da ternura à injúria na construção do livro de artista; Amir Brito Cadôr, professor doutor da Escola de Belas Artes da Universidade Federal de Minas Gerais e idealizador da Coleção Livro de Artista da UFMG ; Omar Khouri, professor doutor do Instituto de Artes da Universidade Estadual Paulista, poeta visual e idealizador da revista Artéria; Dora Longo Bahia, professora doutora do Departamento de Artes Visuais da Escola de Comunicações e Artes da Universidade de São Paulo e artista visual. Mário Ramiro, também professor do mesmo departamento e artista; Edith Derdyk, Lúcia M. Loeb e Fabio Morais, artistas para quem o livro é parte estruturante de suas linguagens poéticas; Luiz Vieira, idealizador e editor na Editora Ikrek, especializada em livros de artista; e Rita Mourão, que coleciona e comercializa livros de artista por meio de sua coleção Desapê.</p>
+      <p>Estas entrevistas — apesar de não entrarem como elementos constituidores do texto, devido a uma escolha de manter um ensaio propositivo e evitar o uso da voz dos entrevistados como estratégia de justificação do que é na verdade uma voz pessoal — foram essenciais para a constituição deste trabalho e para o entendimento e imersão na relação entre artistas e livros no Brasil.</p>
+      <p>Os ensaios foram divididos fisicamente, em livretos, e não separados em capítulos, como uma escolha formal que reflete a relação proposta entre eles. Não se tratam de capítulos de uma história contínua do livro de artista no Brasil, mas de diferentes momentos nos quais é possível enxergar uma linearidade histórica, mas que, apesar disso, se interseccionam e se complementam cronologicamente.</p>
+      <p>Não proponho uma interpretação desta sequência de momentos como um progresso, mas sim como diferentes manifestações de relações artista-livro em que não há uma relação hierárquica. As cinco configurações descritas em cada ensaio são por si completas em sua essência, e não um momento de transição para uma configuração posterior.</p>
+      <p>Fazer um livro sobre livros é criar uma relação complexa. Um conteúdo que fica em suspensão no próprio suporte que é descrito e analisado. Um livro que, expondo as diferentes maneiras em que o objeto livro pode ser abordado, no final aborda-o de uma ótica quase conservadora. Este livro nada mais é que um suporte de um texto que fala sobre livros. </p>
+      <p>Seria possível, então, falar sobre livros de uma maneira em que sua forma (e sua disrupção e apropriação) seria o instrumento e a linguagem necessários para uma proposição poética sobre o que é ser um livro? Este questionamento há de ser combustível para um novo ensaio, que nessa vez não será um texto.</p>
+      <div class="rodape">
+        <p id="rodape-anterior"><a href="1.html"> < ensaio anterior </a></p>
+        <p id="rodape-proximo"><a href="1.html">próximo ensaio ></a></p>
       </div>
+      <div class="bibliografia">
+        <hr>
+        <h2>referências bibliográficas</h2>
+        <p>ADORNO, Theodor W. &ldquo;O ensaio como forma&rdquo;. In: ______. Notas de literatura I. São Paulo: Ed. 34, 2003.</p>
+        <p>ECO, Umberto. Obra aberta: forma e indeterminação nas poéticas contemporâneas. São Paulo: Perspectiva, 2016.</p>
+        <p>GATTI, Luciano. &ldquo;Como escrever? Ensaio e experiência a partir de Adorno&rdquo;. O que nos faz pensar, v. 23, n. 35, p. 169-196, dez. 2014.</p>
+        <p>LARROSA, Jorge. &ldquo;A operação ensaio: sobre o ensaiar e o ensaiar-se no pensamento, na escrita e na vida&rdquo;. Educação &amp; Realidade, v. 29, n. 1, 2004.</p>
+        <p>______. Tremores: escritos sobre experiência. Belo Horizonte: Autêntica, 2017.</p>
+        <p>MERLEAU-PONTY, Maurice. O olho e o espírito. São Paulo: Cosac Naify, 2014.</p>
+        <p>MORAIS, Fabio. Sabão. Florianópolis: par(ent)esis, 2018.</p>
+        <p>PINHO, Eucine. &ldquo;A estética de Dufrenne ou a procura da origem&rdquo;. Revista filosófica de Coimbra, Coimbra, v. 3, n. 6, 1994, p. 361-396.</p>
+        <p>TAREFAS INFINITAS. De 08 ago. 2018 a 27 out. 2018, Sesc Centro de Pesquisa e Formação, São Paulo.</p>
+        <p>WAJCMAN, Gérard. &ldquo;A arte, a psicanálise, o século&rdquo;. In: AUBERT, Jacques et al. Lacan: o escrito, a imagem. Belo Horizonte: Autêntica, 2012.</p>
+      </div>
+    </div>
   </div>
 </div>
 </body>
