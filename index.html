@@ -13,41 +13,67 @@ html {
     line-height: 1.5;
     text-rendering: optimizeLegibility !important;
 }
+img {
+    width: 100%;
+}
 body {
     background-color: #FFFFFF;
     color: #2222FF;
     margin: 0;
-	overflow: hidden;
+	height: auto;
 }
 p {
     font-family: "Archivo", sans-serif;
 }
 header {
-	height: 7vh;
-	justify-content: center;
+	height: 3rem;
+	display: flex;
 }
 header p {
 	padding-left: 1vw;
 	margin: 0;
+	align-self: center;
+	font-size: 1.25em;
 }
 .conteudo {
+	min-height: calc(100vh - 3rem - 2px);
 }
 .conteudo .grid {
 	display: grid;
-	grid-template-columns: 25vw 25vw 25vw 25vw;
-	grid-template-rows: 31vh 31vh 31vh;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 55vh;
 	border: solid 0.5px #2222FF;
 }
 .conteudo .grid-item {
 	border: solid 0.5px #2222FF;
-	padding: 1rem 1rem;
+	position: relative;
+	display: flex;
 }
 .conteudo .grid-txt {
-	display: table;
+	align-self: center;
+	justify-self: center;
+	width: 100%;
+	padding: 2.5rem 2.5rem;
 }
 .conteudo .grid-txt p {
 	text-align: center;
+	font-weight: 400;
 }
+	.grid-img {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		z-index: 1;
+	}
+	.grid-img img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+	.grid-img::hover {
+		display: none;
+	}
 </style>
 
 <body>
@@ -64,6 +90,7 @@ header p {
 		</div>
 		<div class="grid-item" id="grid-3">
 			<div class="grid-txt"><p>cinusp paulo emílio</p></div>
+			<div class="grid-img"><img src="../../../../../pessoal/portfolio/cinusp/tq_cinusp1-azul.jpg"></div>
 		</div>
 		<div class="grid-item" id="grid-4">
 			<div class="grid-txt"><p>teste</p></div>
