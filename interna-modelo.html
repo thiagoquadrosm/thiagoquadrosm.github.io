@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<title>thiago quadros</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+:root {
+--azul: #2222FF;
+--rubik: 'Rubik', sans-serif;
+}
+html {
+    font-size: 20px;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility !important;
+}
+img {
+    width: 100%;
+}
+body {
+    background-color: #FFFFFF;
+    color: var(--azul);
+    margin: 0;
+	height: auto;
+}
+p {
+    font-family: var(--rubik)
+}
+	a {
+		text-decoration: none;
+	}
+	a:visited {
+		text-decoration: none;
+		color: inherit;
+	}
+header {
+	height: 3rem;
+	display: flex;
+	border-bottom: solid 2px var(--azul);
+	background: #FFF;
+	position: sticky;
+	top: 0;
+}
+header p {
+	padding-left: 0.5rem;
+	margin: 0;
+	align-self: center;
+	font-size: 1.25em;
+}
+.conteudo {
+	min-height: calc(100vh - 3rem - 2px);
+}
+.conteudo .grid {
+	display: grid;
+	grid-template-columns: 1fr repeat(7, minmax(1px, 5rem)) 1fr;
+}
+.conteudo .grid-item {
+	position: relative;
+	display: flex;
+	clip-path:polygon(0 0, 0 100%, 100% 100%, 100% 0);
+}
+.conteudo .grid-txt {
+	align-self: center;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	justify-content: center;
+	display: flex;
+	opacity: 0;
+	background: #FFF;
+}
+.conteudo .grid-txt p {
+	text-align: center;
+	font-weight: 400;
+	position: relative;
+	align-self: center;
+}
+	
+.conteudo .grid-img {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.conteudo .grid-img:before {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: var(--azul);
+	content: "";
+	z-index: -1;
+}
+.conteudo .grid-img img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	/*mix-blend-mode: lighten;
+	filter: grayscale(100%);*/
+	z-index: -1;
+}
+.conteudo .grid-item:hover .grid-img img {
+	/*mix-blend-mode: normal;
+	filter: none;*/
+}
+.conteudo .grid-item:hover .grid-txt {
+	opacity: 1;
+}
+	.conteudo p {
+		grid-column: 2 / 9;
+		font-size: 0.9rem;
+	}
+</style>
+
+<body>
+<header class="header">
+	<p><a href="https://thiagoquadrosm.github.io/">thiago quadros</a></p>
+</header>
+<main class="conteudo">
+	<div class="imagem-capa">
+		<img>
+	</div>
+	<div class="grid">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ipsum tortor, pellentesque vel mi et, tincidunt iaculis orci. In et lectus et ante dapibus tempor at quis mi. Nam consectetur luctus nisl nec placerat. Integer tincidunt dolor sit amet lectus aliquam, at gravida arcu efficitur. Vivamus feugiat risus sem, sed scelerisque tellus pharetra sit amet. Aliquam erat volutpat. Fusce in faucibus eros, in porttitor augue. Donec dignissim lobortis massa et malesuada. Suspendisse venenatis metus sit amet diam facilisis, sed porttitor mauris suscipit. Nulla facilisi.</p>
+		<p>Phasellus sagittis lorem quis egestas sagittis. Nullam sit amet urna sed enim ullamcorper luctus. Etiam id mattis mauris. Fusce porttitor est ligula, sed vulputate justo convallis vel. In consectetur purus vitae feugiat pharetra. Ut velit tellus, aliquam vel odio id, sodales consectetur justo. Vestibulum aliquam dui in volutpat laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida, est non malesuada suscipit, est mi rutrum nisi, et ultricies diam leo at velit. Nam neque odio, tincidunt eu feugiat sed, fermentum ut nisi. Morbi vitae arcu velit.</p>
+		<p>Aliquam turpis est, condimentum sed nisi ut, egestas dignissim urna. Nunc dapibus sapien at tincidunt varius. Curabitur faucibus est nec felis gravida, et aliquam augue gravida. Etiam interdum nibh non nibh posuere congue. Mauris imperdiet, velit at rhoncus porta, ligula est interdum nunc, at porttitor massa nisi eget nisi. Ut aliquet, libero sit amet finibus elementum, ante enim euismod erat, eget condimentum odio nulla placerat tellus. Duis et mattis quam. Etiam vel justo non libero interdum suscipit. Fusce non tortor ac nisi pretium aliquet et ac dolor. Morbi ut tincidunt ligula.</p>
+		<p>Nunc ut dolor malesuada, eleifend nunc ut, finibus nulla. Vivamus ornare, orci eget auctor mattis, elit velit elementum turpis, sed finibus lorem ex sit amet mi. Aliquam erat volutpat. Donec eget hendrerit lorem. Morbi ornare varius dignissim. In aliquet ultrices diam, sit amet blandit ipsum condimentum dignissim. Donec eleifend, massa eu posuere efficitur, arcu velit congue sem, vehicula efficitur urna nunc a purus. Pellentesque cursus varius eros quis sodales. Duis ex odio, commodo eu urna sit amet, consequat volutpat metus. Maecenas aliquet aliquam iaculis. Suspendisse in lorem tincidunt, ultrices nulla ac, consectetur risus. Quisque mauris sem, pellentesque ac est ut, convallis mattis leo.</p>
+		<p>Praesent maximus vitae nibh id auctor. Etiam ullamcorper quis ex at scelerisque. Pellentesque posuere velit bibendum odio dictum, in sodales lacus aliquam. Vestibulum ultrices ut dolor in gravida. Vestibulum fermentum enim nec elit pretium, finibus eleifend ipsum molestie. Vivamus feugiat fringilla vulputate. Curabitur id magna orci. Sed ut odio risus. Integer turpis augue, fermentum eget ornare id, luctus eget lorem. Donec dolor metus, euismod id consectetur nec, fringilla non quam. Quisque id finibus dolor. Pellentesque vestibulum placerat dui, nec hendrerit urna tristique at.</p>
+	</div>
+</main>
+<footer>
+<div class="footer-div">
+
+</div>
+</footer>
+</body>
+</html>

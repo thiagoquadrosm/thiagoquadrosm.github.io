@@ -41,6 +41,11 @@ p {
 header {
 	height: 3rem;
 	display: flex;
+	border-bottom: solid 2px var(--azul);
+	background: #FFF;
+	position: sticky;
+	top: 0;
+	z-index: 5;
 }
 header p {
 	padding-left: 0.5rem;
@@ -56,12 +61,13 @@ header p {
 	grid-template-columns: repeat(4, 1fr);
 	grid-auto-rows: calc(50vh - 1.5rem - 1px);
 	border: solid 1px #2222FF;
+	border-top: none;
 }
 .conteudo .grid-item {
 	border: solid 1px #2222FF;
 	position: relative;
 	display: flex;
-	clip-path:polygon(0 0, 0 100%, 100% 100%, 100% 0);
+	/* clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);*/
 }
 .conteudo .grid-txt {
 	align-self: center;
@@ -93,6 +99,7 @@ header p {
 	background-color: var(--azul);
 	content: "";
 	z-index: -1;
+	display: none;
 }
 .conteudo .grid-img img {
 	height: 100%;
@@ -136,7 +143,7 @@ header p {
 
 <body>
 <header class="header">
-	<p>thiago quadros</p>
+	<p><a href="https://thiagoquadrosm.github.io/">thiago quadros</a></p>
 </header>
 <main class="conteudo">
 	<div class="grid">
