@@ -36,6 +36,7 @@ header {
 	position: sticky;
 	top: 0;
 	justify-content: space-between;
+	z-index: 5;
 }
 header p {
 	padding-left: 0.75rem;
@@ -52,7 +53,7 @@ header .header-direita p {
 	padding-left: 0.75rem;
 }
 .conteudo {
-	min-height: calc(100vh - 3rem - 2px);
+	min-height: calc(100vh - 3rem - 6px);
 }
 .conteudo .grid-interna {
 	display: grid;
@@ -60,16 +61,19 @@ header .header-direita p {
 }
 .conteudo .grid  {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-auto-rows: calc(50vh - 1.5rem - 1px);
-	border: solid 1px #2222FF;
+	width: calc(100vw - 2px);
+	margin: 0 auto;
 	border-top: none;
+	position: relative;
+	top: -1px;
 }
 .conteudo .grid-item {
-	border: solid 1px #2222FF;
+	border: solid 1px var(--azul);
+	outline: solid 1px var(--azul);
 	position: relative;
 	display: flex;
-	/* clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);*/
 }
 .conteudo .grid-txt {
 	align-self: center;
@@ -144,9 +148,12 @@ header .header-direita p {
 	display: inline-block;
 }*/
 .conteudo .imagem-capa {
-	width: 100%;
+	width: calc(100% - 4px);
 	border-bottom: solid 2px var(--azul);
 	grid-column: 1 / 14;
+	border-left: solid 2px var(--azul);
+	border-right: solid 2px var(--azul);
+	
 }
 .conteudo .imagem-capa img {
 	max-height: calc(100vh - 3rem - 4px);
@@ -154,33 +161,48 @@ header .header-direita p {
 	width: 100%;
 	object-fit: cover;
 }
-
+.conteudo .conteudo-foto {
+	grid-column: 4 / 11;
+	margin: 1rem 0 0;
+}
+.conteudo .legenda-foto {
+	text-transform: uppercase;
+	font-size: 0.6rem;
+}
 footer .footer {
 	display: flex;
 	justify-content: space-between;
 	border-top: solid 2px var(--azul);
-	margin-top: 4rem;
+	margin-top: 2rem;
 	padding: 0 0.75rem;
 }
 footer .footer p {
 	font-size: 0.9rem;
 }
-
-	@media only screen and (max-width: 1440px) {
+	@media only screen and (min-width: 1919px) {
 		.conteudo .grid {
-			grid-template-columns: repeat(3, 1fr);
+			grid-template-columns: repeat(4, 1fr);
 		}
 	}
-	
-	@media only screen and (max-width: 1024px) {
+
+	@media only screen and (max-width: 1141px) {
 		.conteudo .grid {
 			grid-template-columns: repeat(2, 1fr);
+		}
+		.conteudo .grid-item:active .grid-txt {
+			opacity: 1;
 		}
 	}
 	
 	@media only screen and (max-width: 721px) {
+		html {
+			font-size: 18px;
+		}
 		.conteudo .grid {
 			grid-template-columns: repeat(1, 1fr);
+		}
+		.conteudo p, .conteudo .conteudo-foto {
+			grid-column: 3 / 12;
 		}
 	}
 	@media only screen and (max-height: 639px) {
