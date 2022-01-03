@@ -57,7 +57,7 @@ header .header-direita p {
 }
 .conteudo .grid-interna {
 	display: grid;
-	grid-template-columns: 1fr repeat(11, minmax(1px, 5rem)) 1fr;
+	grid-template-columns: minmax(1rem, 1fr) repeat(11, minmax(1px, 5rem)) minmax(1rem, 1fr);
 }
 .conteudo .grid  {
 	display: grid;
@@ -162,12 +162,13 @@ header .header-direita p {
 	object-fit: cover;
 }
 .conteudo .conteudo-foto {
-	grid-column: 4 / 11;
-	margin: 1rem 0 0;
+	grid-column: 2 / 13;
+	margin: 2rem 0 1rem;
 }
 .conteudo .legenda-foto {
 	text-transform: uppercase;
-	font-size: 0.6rem;
+	font-size: 0.65rem;
+	font-weight: 400;
 }
 footer .footer {
 	display: flex;
@@ -179,7 +180,7 @@ footer .footer {
 footer .footer p {
 	font-size: 0.9rem;
 }
-	@media only screen and (min-width: 1919px) {
+	@media only screen and (min-width: 1720px) {
 		.conteudo .grid {
 			grid-template-columns: repeat(4, 1fr);
 		}
@@ -201,8 +202,11 @@ footer .footer p {
 		.conteudo .grid {
 			grid-template-columns: repeat(1, 1fr);
 		}
-		.conteudo p, .conteudo .conteudo-foto {
+		.conteudo p {
 			grid-column: 3 / 12;
+		}
+		.conteudo .conteudo-foto {
+			grid-column: 2 / 13;
 		}
 	}
 	@media only screen and (max-height: 639px) {
