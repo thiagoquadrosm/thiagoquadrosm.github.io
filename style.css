@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 :root {
---azul: #2222FF;
---rubik: 'Rubik', sans-serif;
+	--azul: #2222FF;
+	--rubik: 'Rubik', sans-serif;
 }
 html {
     font-size: 20px;
@@ -21,15 +21,18 @@ body {
 p {
     font-family: var(--rubik)
 }
-	a {
-		text-decoration: none;
-	}
-	a:visited {
-		text-decoration: none;
-		color: inherit;
-	}
+a {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+a:hover {
+	text-decoration: underline;
+}
 header {
-	height: 3rem;
+	height: 1rem;
 	display: flex;
 	border-bottom: solid 2px var(--azul);
 	background: #FFF;
@@ -37,6 +40,8 @@ header {
 	top: 0;
 	justify-content: space-between;
 	z-index: 5;
+	padding: 1rem 0;
+	align-items: center;
 }
 header p {
 	padding-left: 0.75rem;
@@ -93,7 +98,6 @@ header .header-direita p {
 	align-self: center;
 	font-size: 1rem;
 }
-	
 .conteudo .grid-img {
 	position: absolute;
 	height: 100%;
@@ -121,12 +125,74 @@ header .header-direita p {
 	/*mix-blend-mode: normal;
 	filter: none;*/
 }
-.conteudo .grid-item:hover .grid-txt {
+.conteudo .grid-item:hover .grid-txt, .conteudo .grid-item:active .grid-txt {
 	opacity: 1;
 }
 .conteudo p {
 	grid-column: 4 / 11;
-	font-size: 0.85rem;
+	font-size: 0.825rem;
+}
+.conteudo .item-cv {
+	font-size: 1.375rem;
+	margin-bottom: 1rem;
+}
+.conteudo .item-cv::after {
+	content: "";
+	width: 100%;
+	display: block;
+	position: relative;
+	height: 2px;
+	background: var(--azul);
+	margin-top: 0.25rem;
+}
+.conteudo ul {
+	grid-column: 4 / 11;
+	padding-left: 0;
+	list-style: none;
+	margin: 0;
+}
+.conteudo ul li {
+	margin-bottom: 1.5rem;
+}
+.conteudo ul p {
+	margin: 0;
+}
+.conteudo ul .empresa {
+	font-size: 1.125rem;
+	text-transform: lowercase;
+	margin-bottom: 0;
+	margin-top: 0;
+	text-decoration: underline;
+}
+.conteudo ul .cargo {
+	font-size: 1rem;
+	text-transform: lowercase;
+	margin-top: 0.25rem;
+}
+.conteudo .maior {
+	font-size: 1rem;
+	text-transform: lowercase;
+	margin: 0;
+}
+.conteudo ul .periodo {
+	font-size: 0.675rem;
+	margin-bottom: 0.5rem;
+}
+.conteudo ul .descricao {
+	margin-bottom: 0.75rem;
+	font-size: 0.75rem;
+	/* text-transform: lowercase;*/
+}
+.conteudo #competencias {
+	flex-direction: row;
+	flex-wrap: wrap;
+	display: flex;
+	column-gap: 2rem;
+}
+.conteudo #competencias li {
+	margin-bottom: 0.5rem;
+	max-width: calc(50% - 1rem);
+	flex-shrink: 2;
 }
 .conteudo .titulo {
 	font-size: 2rem;
@@ -169,6 +235,7 @@ header .header-direita p {
 	text-transform: uppercase;
 	font-size: 0.65rem;
 	font-weight: 400;
+	text-align: center;
 }
 footer .footer {
 	display: flex;
@@ -202,11 +269,21 @@ footer .footer p {
 		.conteudo .grid {
 			grid-template-columns: repeat(1, 1fr);
 		}
-		.conteudo p {
+		.conteudo p, .conteudo ul {
 			grid-column: 3 / 12;
 		}
 		.conteudo .conteudo-foto {
 			grid-column: 2 / 13;
+		}
+		header {
+			align-items: baseline;
+		}
+		header p {
+			padding-left: 0.5rem !important;
+		}
+		.conteudo #competencias li {
+			margin-bottom: 0.5rem;
+			max-width: 100%;
 		}
 	}
 	@media only screen and (max-height: 639px) {
