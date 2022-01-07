@@ -124,10 +124,10 @@ header .header-direita p {
 	filter: grayscale(100%);*/
 	z-index: -1;
 }
-.conteudo .grid-item:hover .grid-img img {
-	/*mix-blend-mode: normal;
-	filter: none;*/
-}
+/*.conteudo .grid-item:hover .grid-img img {
+	mix-blend-mode: normal;
+	filter: none;
+}*/
 .conteudo .grid-item:hover .grid-txt, .conteudo .grid-item:active .grid-txt {
 	opacity: 1;
 }
