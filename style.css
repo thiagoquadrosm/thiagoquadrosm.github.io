@@ -17,6 +17,7 @@ body {
     color: var(--azul);
     margin: 0;
 	height: auto;
+	font-weight: 400;
 }
 p, h1, h2, h3, h4 {
     font-family: var(--rubik)
@@ -46,11 +47,14 @@ header {
 	padding: 1rem 0;
 	align-items: center;
 }
-header p {
+header p, header h1 {
 	padding-left: 0.75rem;
 	margin: 0;
 	align-self: center;
 	font-size: 1.25em;
+}
+header h1 {
+	font-weight: 400;
 }
 header .header-direita {
 	display: flex;
@@ -131,9 +135,10 @@ header .header-direita p {
 .conteudo .grid-item:hover .grid-txt, .conteudo .grid-item:active .grid-txt {
 	opacity: 1;
 }
-.conteudo p {
+.conteudo p, .conteudo h2, .conteudo h3 {
 	grid-column: 4 / 11;
 	font-size: 0.825rem;
+	font-weight: 400;
 }
 .conteudo .item-cv {
 	font-size: 1.375rem;
@@ -198,10 +203,16 @@ header .header-direita p {
 	max-width: calc(50% - 1rem);
 	flex-shrink: 2;
 }
-.conteudo .titulo {
+.conteudo h2 {
 	font-size: 2rem;
 	margin-bottom: 0;
 	margin-top: 2rem;
+	line-height: 1.2;
+}
+.conteudo h3 {
+	font-size: 1.375rem;
+	margin-bottom: 0;
+	text-transform: lowercase;
 	line-height: 1.2;
 }
 .conteudo .data {
@@ -274,7 +285,7 @@ footer .footer p {
 		.conteudo .grid {
 			grid-template-columns: repeat(1, 1fr);
 		}
-		.conteudo p, .conteudo ul {
+		.conteudo p, .conteudo ul, .conteudo h2, .conteudo h3 {
 			grid-column: 3 / 12;
 		}
 		.conteudo .conteudo-foto {
