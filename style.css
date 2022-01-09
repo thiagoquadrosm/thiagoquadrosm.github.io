@@ -235,7 +235,7 @@ header .header-direita p {
 	grid-column: 1 / 14;
 	border-left: solid 2px var(--azul);
 	border-right: solid 2px var(--azul);
-	
+	max-height: calc(100vh - 3rem - 4px - 140px);
 }
 .conteudo .imagem-capa img {
 	max-height: calc(100vh - 3rem - 4px);
@@ -262,6 +262,9 @@ footer .footer {
 }
 footer .footer p {
 	font-size: 0.9rem;
+}
+.conteudo .conteudo-foto .img-mobile {
+	display: none !important;
 }
 	@media only screen and (min-width: 1720px) {
 		.conteudo .grid {
@@ -300,6 +303,12 @@ footer .footer p {
 		.conteudo #competencias li {
 			margin-bottom: 0.5rem;
 			max-width: 100%;
+		}
+		.conteudo .conteudo-foto .img-mobile {
+			display: inherit !important;
+		}
+		.conteudo .conteudo-foto .img-desk {
+			display: none !important;
 		}
 	}
 	@media only screen and (max-height: 639px) {

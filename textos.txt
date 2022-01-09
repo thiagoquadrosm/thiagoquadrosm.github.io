@@ -6,3 +6,5 @@ Os conteúdos em webstory tem maior apelo visual e contam uma diversidade de rec
 
 Fui responsável por desenvolver a linguagem visual dos webstories do Nexo Jornal, adaptando ao novo formato uma variedade de conteúdos já publicados no jornal. 
 
+Os webstories são construídos no Makestories, uma ferramenta nova e com diversas limitações. O desafio foi manter a coerência visual com a identidade visual do jornal, e ao mesmo tempo torná-los atrativos em um formato mais interativo do que um texto, para uma audiência que não é a cativa do Nexo.
+
