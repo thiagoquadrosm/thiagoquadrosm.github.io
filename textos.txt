@@ -1,1 +1,8 @@
 Webstories
+
+O webstory é um novo formato do Google para conteúdos editoriais otimizado para celulares. Ele permite uma navegação mais confortável e uma experiência interativa e imersiva.
+
+Os conteúdos em webstory tem maior apelo visual e contam uma diversidade de recursos, como texto, imagens, vídeos, animações e componentes interativos.
+
+Fui responsável por desenvolver a linguagem visual dos webstories do Nexo Jornal, adaptando ao novo formato uma variedade de conteúdos já publicados no jornal. 
+
