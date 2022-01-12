@@ -9,7 +9,7 @@ html {
     line-height: 1.5;
     text-rendering: optimizeLegibility !important;
 }
-img {
+img, video {
     width: 100%;
 }
 body {
@@ -24,6 +24,12 @@ p, h1, h2, h3, h4 {
 }
 a {
 	text-decoration: none;
+}
+.conteudo .grid-interna a {
+	text-decoration: underline;;
+}
+.conteudo .grid-interna a:hover {
+	color: #333;
 }
 a:visited {
 	text-decoration: none;
@@ -214,6 +220,7 @@ header .header-direita p {
 	margin-bottom: 0;
 	text-transform: lowercase;
 	line-height: 1.2;
+	margin-top: 3rem;
 }
 .conteudo .data {
 	margin-bottom: 0.5rem;
@@ -245,7 +252,13 @@ header .header-direita p {
 }
 .conteudo .conteudo-foto {
 	grid-column: 2 / 13;
-	margin: 2rem 0 1rem;
+	text-align: center;
+}
+.conteudo .expediente {
+	grid-column: 6 / 9 !important;
+}
+.conteudo .expediente p {
+	font-size: 0.6em;
 }
 .conteudo .legenda-foto {
 	text-transform: uppercase;
@@ -263,8 +276,16 @@ footer .footer {
 footer .footer p {
 	font-size: 0.9rem;
 }
-.conteudo .conteudo-foto .img-mobile {
+.conteudo .img-mobile {
 	display: none !important;
+}
+.conteudo video.img-mobile {
+	max-width: 320px;
+	display: inherit !important;
+	margin: 1rem auto 0;
+}
+.borda-azul {
+	border: solid 2px var(--azul);
 }
 	@media only screen and (min-width: 1720px) {
 		.conteudo .grid {
@@ -304,11 +325,16 @@ footer .footer p {
 			margin-bottom: 0.5rem;
 			max-width: 100%;
 		}
-		.conteudo .conteudo-foto .img-mobile {
+		.conteudo .img-mobile {
 			display: inherit !important;
 		}
-		.conteudo .conteudo-foto .img-desk {
+		.conteudo .img-desk {
 			display: none !important;
+		}
+		.conteudo video.img-mobile {
+			max-width: 400px;
+			display: inherit !important;
+			margin: 0 auto;
 		}
 	}
 	@media only screen and (max-height: 639px) {
