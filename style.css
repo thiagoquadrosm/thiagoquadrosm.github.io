@@ -76,6 +76,7 @@ header .header-direita p {
 .conteudo .grid-interna {
 	display: grid;
 	grid-template-columns: minmax(1rem, 1fr) repeat(11, minmax(1px, 5rem)) minmax(1rem, 1fr);
+	margin-bottom: 3rem;
 }
 .conteudo .grid  {
 	display: grid;
@@ -371,6 +372,12 @@ footer .footer p {
 			margin: 0 auto;
 			grid-column: 2 / 11;
 			margin-top: 1rem;
+		}
+		.conteudo .expediente {
+			grid-column: 3 / 12 !important;
+		}
+		.conteudo .grid-interna {
+			grid-template-columns: 0 repeat(11, minmax(1px, 5rem)) 0;
 		}
 	}
 	@media only screen and (max-height: 639px) {
