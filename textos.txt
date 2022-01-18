@@ -34,4 +34,8 @@ Seu impacto é acompanhar dia por dia o número de vítimas aumentando, mas tamb
 
 
 caixas
+Para organizar um conteúdo com diversos tópicos, foi escolhida uma organização por caixas, no lugar do texto corrido tradicional.
 
+Cada seção tem um conjunto de botões, que podem ser abertos e revelam uma caixa com o conteúdo. Para cada seção, a caixa precisa de um desenho diferente para acomodar os diferentes tipos de conteúdos.
+
+As caixas também permitem uma visão geral de cada seção — sem abrir os itens, é possível ver a grande quantidade de crimes investigados pela CPI, por exemplo.

@@ -41,6 +41,7 @@ a:visited {
 }
 a:active {
 	color: var(--azul);
+	transition: 0.125s ease-in-out;
 }
 a:hover {
 	text-decoration: underline;
@@ -268,7 +269,7 @@ header .header-direita p {
 	grid-column: 1 / 14;
 	border-left: solid 2px var(--azul);
 	border-right: solid 2px var(--azul);
-	max-height: calc(100vh - 3rem - 4px - 140px);
+	max-height: calc(100vh - 3rem - 4px);
 }
 .conteudo .imagem-capa img {
 	max-height: calc(100vh - 3rem - 4px);
@@ -405,6 +406,12 @@ footer .footer p {
 		}
 		.conteudo .grid-interna {
 			grid-template-columns: 0 repeat(11, minmax(1px, 5rem)) 0;
+		}
+		.conteudo .data {
+			grid-column: 3 / 10;
+		}
+		.conteudo-foto .legenda-foto {
+			padding: 0 1rem;
 		}
 	}
 	@media only screen and (max-height: 639px) {
