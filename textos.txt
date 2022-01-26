@@ -39,3 +39,13 @@ Para organizar um conteúdo com diversos tópicos, foi escolhida uma organizaç�
 Cada seção tem um conjunto de botões, que podem ser abertos e revelam uma caixa com o conteúdo. Para cada seção, a caixa precisa de um desenho diferente para acomodar os diferentes tipos de conteúdos.
 
 As caixas também permitem uma visão geral de cada seção — sem abrir os itens, é possível ver a grande quantidade de crimes investigados pela CPI, por exemplo.
+
+
+
+Especial Impeachment
+
+O especial "5 anos: o saldo do impeachment de Dilma para o Brasil" analisa, em tópicos, as consequências do golpe de 2016 que perduram até hoje. Como uma análise, o desafio foi dar ao conteúdo sua devida aparência de documento histórico, mas não factual. A escolha das fotos e a organização do conteúdo tem o objetivo de construir visualmente o contexto político da época, mais do que ilustrar acontecimentos.
+
+Junto a cada tópico, há também um verbete com diversas definições da palavra-chave de cada item do especial, entre itens mais denotativos como "política" ou mais conotativos como "eclipse". Devido ao tamanho de alguns verbetes, na versão mobile há um botão para exibir o verbete completo.
+
+
