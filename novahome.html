@@ -30,16 +30,63 @@
             <img class="img-mobile" src="assets/nova-home/tq_novahome-1m.jpg">
 		</div>
 		<h2 class="titulo">nova home do nexo jornal</h2>
-		<a class="data link-ext" href="https://www.nexojornal.com.br/especial/2021/08/27/5-anos-o-saldo-do-impeachment-de-Dilma-para-o-Brasil" target="_blank" rel="noopener noreferrer"><p>nexo jornal — 2021 (em implantação)</p></a>
-		<p>O especial "5 anos: o saldo do impeachment de Dilma para o Brasil" analisa, em tópicos, as consequências do golpe de 2016 que perduram até hoje. Como uma análise, o desafio foi dar ao conteúdo sua devida aparência de documento histórico, mas não factual. A escolha das fotos e a organização do conteúdo tem o objetivo de construir visualmente o contexto político da época, mais do que ilustrar acontecimentos.</p>
-		<p>Junto a cada tópico, há também um verbete com diversas definições da palavra-chave de cada item do especial, entre itens mais denotativos como "política" ou mais conotativos como "eclipse". Devido ao tamanho de alguns verbetes, na versão mobile há um botão para exibir o verbete completo.</p>
-		<div class="conteudo-foto">
-			<video type="video/mp4" autoplay loop muted class="img-desk borda-azul" src="assets/nova-home/novahome-desktop-9b.mp4" ></video>
-			<video type="video/mp4" autoplay loop muted class="img-mobile borda-azul" src="assets/nova-home/novahome-mobile-9.mp4" ></video>
+		<a class="data link-ext" href="https://www.nexojornal.com.br/expresso/2021/06/21/A-nova-home-do-%E2%80%98Nexo%E2%80%99-e-a-amplia%C3%A7%C3%A3o-de-seu-projeto-editorial" target="_blank" rel="noopener noreferrer"><p>nexo jornal — 2021 (em implantação)</p></a>
+		<p>A nova home do Nexo é um dos maiores projetos da equipe de arte do jornal. A página inicial que estava no ar havia sido desenhada em 2016, e readaptada em 2019, mas não correspondia mais à produção da redação do Nexo, e também às novas maneiras de navegar e consumir jornalismo online.</p>
+		<p>Foi feito um trabalho intensivo de pesquisa e prototipação liderado por Guilherme Falcão. A página foi desenhada lado a lado com os editores do Nexo, para entender suas demandas: criar uma página dinâmica, que responda aos acontecimentos e à produção diária do jornal, e que possa ser modificada de forma simples e principalmente rápida, como pede o ritmo de um jornal.</p>
+		<p>O trabalho também foi realizado em conjunto com a equipe de desenvolvedores, para que entendessemos as possibilidades do CMS e da biblioteca React. O layout foi desenhado de forma a corresponder às atualizações de back-end no planejamento da equipe de tecnologia.</p>
+		<div class="conteudo-foto ladoalado sombra">
+			<img class="img-desk" src="assets/nova-home/novahome-print-desk1.jpg">
+            <img class="img-mobile" src="assets/nova-home/novahome-print-mob1.jpg">
+		</div>
+		<div class="conteudo-foto ladoalado sombra">
+			<img class="img-desk" src="assets/nova-home/novahome-print-desk2.jpg">
+            <img class="img-mobile" src="assets/nova-home/novahome-print-mob2.jpg">
+		</div>
+		<div class="conteudo-foto ladoalado sombra">
+			<img class="img-desk" src="assets/nova-home/novahome-print-desk3.jpg">
+            <img class="img-mobile" src="assets/nova-home/novahome-print-mob3.jpg">
+		</div>
+		<div class="conteudo-foto ladoalado sombra">
+			<img class="img-desk" src="assets/nova-home/novahome-print-desk4.jpg">
+            <img class="img-mobile" src="assets/nova-home/novahome-print-mob4.jpg">
+		</div>
+		<div class="conteudo-foto ladoalado sombra">
+			<img class="img-desk" src="assets/nova-home/novahome-print-desk5.jpg">
+            <img class="img-mobile" src="assets/nova-home/novahome-print-mob5.jpg">
+		</div>
+		<div class="conteudo-foto ladoalado sombra">
+			<img class="img-desk" src="assets/nova-home/novahome-print-desk6.jpg">
+            <img class="img-mobile" src="assets/nova-home/novahome-print-mob6.jpg">
+		</div>
+		<h3>construção</h3>
+		<p>Minha principal atribuição no projeto é como ponte entre o layout desenhado e a equipe de programadores — transformar um desenho inicial em um layout pronto para ser desenvolvido.</p>
+		<p>A estrutura da página foi dividida em grandes módulos, que podem ser reposicionados pelos editores. Cada módulo tem posições específicas, os componentes, que podem ser ocupadas por qualquer conteúdo do Nexo. Dentro dessas posições, o conteúdo é mostrado seguindo as regras de visualização de cada componente.</p>
+		<div class="conteudo-foto scroll borda-azul">
+			<img class="img-desk" src="assets/nova-home/tq_novahome-blocos-desk.png">
+            <img class="img-mobile" src="assets/nova-home/tq_novahome-blocos-mob.png">
+		</div>
+		<p class="legenda-foto scroll-legenda">Divisão da home em módulos, formados por componentes</p>
+		<p>Componentes com cores de fundo ou detalhes coloridos se adaptam à cor do tipo de conteúdo que ocupa sua posição, de acordo com a paleta de cores do jornal.</p>
+		<p>Alguns módulos, como o bloco principal, tem mais de uma possibilidade de layout, podendo dar grande destaque a uma notícia bombástica, por exemplo.</p>
+		<div class="conteudo-foto scroll borda-azul">
+			<img class="img-desk" src="assets/nova-home/tq_novahome-mapa-desk.png">
+            <img class="img-mobile" src="assets/nova-home/tq_novahome-mapa-mob.png">
+		</div>
+		<p class="legenda-foto scroll-legenda">Mapa da construção da home por meio dos módulos</p>
+		<p>Além disso, foram elaboradas regras para que a disposição dos conteúdos na home definida pelos editores se adapte à qualquer tela de qualquer tamanho — sem perda de hierarquização ou conteúdo. O grid responsivo reposiciona os componentes automaticamente.</p>
+		<div class="conteudo-foto scroll borda-azul">
+			<img src="assets/nova-home/tq_novahome-grid.png">
+		</div>
+		<p class="legenda-foto scroll-legenda">Planejamento de grid e responsividade dos componentes</p>
+		<h3>Layout final</h3>
+		<p>O resultado do trabalho pode ser visto no vídeo abaixo. A nova home do Nexo está em implantação pela equipe de tecnologia — que decidiu fazer um desenvolvimento gradual. O primeiro bloco já está no ar.</p>
+		<div class="conteudo-foto sombra">
+			<video type="video/mp4" controls loop muted class="img-desk" src="assets/nova-home/novahome-desktop-F2.mp4" ></video>
+			<video type="video/mp4" controls loop muted class="img-mobile" src="assets/nova-home/novahome-mobile-F2.mp4" ></video>
 			<!--<p class="legenda-foto">Tela inicial do Especial na versão desktop</p>-->
 		</div>
         <div class="expediente">
-            <p>Este projeto foi desenvolvido usando as ferramentas Adobe Xd, com layout e direção de Guilherme Falcão</p>
+            <p>Este projeto foi desenvolvido usando a ferramenta Adobe Xd, com layout em conjunto e direção de Guilherme Falcão</p>
         </div>
 	</div>
 </main>
