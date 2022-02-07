@@ -49,3 +49,20 @@ O especial "5 anos: o saldo do impeachment de Dilma para o Brasil" analisa, em t
 Junto a cada tópico, há também um verbete com diversas definições da palavra-chave de cada item do especial, entre itens mais denotativos como "política" ou mais conotativos como "eclipse". Devido ao tamanho de alguns verbetes, na versão mobile há um botão para exibir o verbete completo.
 
 
+Especial Oiticica
+
+O especial "Os múltiplos sentidos da arte de Hélio Oiticica" faz uma retrospectiva da obra e da trajetória de um dos mais importantes artistas brasileiros. Com um texto introdutório, comentários críticos e apresentações de suas principais obras, a matéria especial condensa o trabalho de Oiticica não só no conteúdo, mas também em sua forma.
+
+Inspirados nos trabalhos de Oiticica, o layout foi pensando de forma tridimensional, com as imagens e os textos posicionados em diferentes planos — este efeito foi desenvolvido em css por meio de um parallax 3d. As imagens deslizam junto com o texto e grandes formas coloridas, o conteúdo convida o leitor a entrar nesse ambiente e interagir (virtualmente) com suas imagens.
+
+Serrapilheira
+
+"Cientistas do Brasil que você precisa conhecer" é um projeto de divulgação científica do Nexo em parceira com o Instituto Serrapilheira. Ainda em andamento, o projeto é formado por diversas frentes de produção de conteúdos sobre os cientistas brasileiros, tanto históricos quanto aqueles em atividade.
+
+videos
+Foram produzidos 12 vídeos sobre importantes cientistas da história do Brasil, seus trabalhos e sua contribuições para a evolução da ciência. Desenvolvi a identidade visual e grande parte das ilustrações dos vídeos — posteriormente animadas pela equipe audiovisual do jornal.
+
+O objetivo foi produzir um estilo de desenho que fosse fácil e rápido de animar, mas ao mesmo tempo mantivesse o movimento na tela, já que o principal elemento do vídeo é a narração. Além disso, era necessário um traço versátil que pudesse se adaptar a desenhos ilustrativos e esquemáticos sobre diferentes áreas do conhecimento: da física à agronomia.
+
+podcasts
+Na segunda parte do projeto, estão sendo produzidos podcasts de entrevistas com grandes nomes da ciência brasileira atualmente. Cada podcast é acompanhado de uma página especial, com a transcrição da entrevista, fotos e ilustrações. Fui responsável pelo projeto gráfico e pela programação das páginas.

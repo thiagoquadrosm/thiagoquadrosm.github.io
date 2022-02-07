@@ -270,6 +270,7 @@ header .header-direita p {
 	border-left: solid 2px var(--azul);
 	border-right: solid 2px var(--azul);
 	max-height: calc(100vh - 3rem - 4px);
+	display: none;
 }
 .conteudo .imagem-capa img {
 	max-height: calc(100vh - 3rem - 4px);
@@ -319,6 +320,14 @@ footer .footer p {
 .conteudo video.img-desk {
 	grid-column: 1 / 10;
 }
+.conteudo .ladoalado img.img-desk {
+	grid-column: 1 / 10;
+}
+.conteudo .ladoalado img.img-mobile {
+	display: inherit !important;
+	grid-column: 10 / 12;
+	align-self: end;
+}
 .conteudo .conteudo-foto img {
 	grid-column: 1 / 12;
 }
@@ -349,6 +358,14 @@ footer .footer p {
 .conteudo .link-conteudo p {
 	font-size: 0.7rem;
 	text-align: right;
+}
+.conteudo .conteudo-foto iframe {
+	width: 100%;
+	object-fit: contain;
+	aspect-ratio: 16/9 !important;
+	grid-column: 3 / 10 ;
+	min-height: 400px;
+	margin-bottom: 2rem;
 }
 
 	@media only screen and (min-width: 1720px) {
@@ -416,6 +433,11 @@ footer .footer p {
 		}
 		.conteudo-foto .legenda-foto {
 			padding: 0 1rem;
+			grid-column: 2 / 11;
+		}
+		.conteudo .conteudo-foto iframe {
+			grid-column: 2 / 11;
+			min-height: 300px;
 		}
 	}
 	@media only screen and (max-height: 639px) {
