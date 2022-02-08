@@ -542,6 +542,10 @@ footer .footer p {
 		.trescolunas img, .trescolunas video {
 			grid-column: span 6 !important;
 		}
+		.conteudo .ladoalado img.img-mobile {
+			grid-column: 2 / 11;
+			align-self: end;
+		}
 	}
 	@media only screen and (max-height: 639px) {
 		.conteudo .grid {
