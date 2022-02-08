@@ -435,7 +435,7 @@ footer .footer p {
 	grid-column: 4 / 6 !important;
 	grid-row: 2 / 6;
 	clip-path: circle();
-	transform: scale(0.9);
+	transform: scale(0.9 );
 }
 
 
