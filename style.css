@@ -392,13 +392,30 @@ footer .footer p {
 	top: -1.25rem;
 }
 .sombra img, .sombra video {
-	box-shadow: 1px 1px 4px #CCC;
+	box-shadow: 2px 2px 10px #EEE;
 }
 .tres-imagens img.img-desk {
 	grid-column: 1 / 7 !important;
 }
 .tres-imagens img.img-mobile {
 	grid-column: span 2 !important;
+}
+.regina {
+	display: grid !important;
+	column-gap: 1rem !important;
+	grid-template-columns: repeat(12, minmax(1px, 5rem)) !important;
+	row-gap: 1rem;
+	grid-column: 3 / 12 !important;
+}
+.regina img {
+	grid-column: span 6 !important;
+	align-self: end;
+}
+.regina #regina1 {
+	grid-column: 1 / 13 !important;
+}
+.colunaamenos {
+	grid-column: 3 / 12 !important;
 }
 
 
@@ -414,6 +431,12 @@ footer .footer p {
 		}
 		.conteudo .grid-item:active .grid-txt {
 			opacity: 1;
+		}
+		.regina {
+			grid-column: 2 / 13 !important;
+		}
+		.colunaamenos {
+			grid-column: 2 / 13 !important;
 		}
 	}
 	
@@ -467,7 +490,7 @@ footer .footer p {
 		}
 		.conteudo-foto .legenda-foto {
 			padding: 0 1rem;
-			grid-column: 2 / 11;
+			grid-column: 2 / 12;
 		}
 		.conteudo .conteudo-foto iframe {
 			grid-column: 2 / 11;
@@ -482,6 +505,12 @@ footer .footer p {
 			width: 100%;
 			object-fit: cover;
 			grid-column: 1 / 12 !important;
+		}
+		.regina img {
+			grid-column: 2 / 12 !important;
+		}
+		.regina #regina1 {
+			grid-column: 2 / 12 !important;
 		}
 	}
 	@media only screen and (max-height: 639px) {
