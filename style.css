@@ -81,8 +81,9 @@ header .header-direita p {
 }
 .conteudo .grid-interna {
 	display: grid;
-	grid-template-columns: minmax(1rem, 1fr) repeat(11, minmax(1px, 5rem)) minmax(1rem, 1fr);
+	grid-template-columns: minmax(1rem, 1fr) repeat(11, minmax(1px, 4.5rem)) minmax(1rem, 1fr);
 	margin-bottom: 3rem;
+	column-gap: 1rem;
 }
 .conteudo .grid  {
 	display: grid;
@@ -427,6 +428,15 @@ footer .footer p {
 .trescolunas img, .trescolunas video {
 	grid-column: span 4 !important;
 }
+.sobre-txt {
+	grid-column: 6 / 11 !important;
+}
+#foto-minha {
+	grid-column: 4 / 6 !important;
+	grid-row: 2 / 6;
+	clip-path: circle();
+	transform: scale(0.9);
+}
 
 
 	@media only screen and (min-width: 1720px) {
@@ -494,6 +504,7 @@ footer .footer p {
 		}
 		.conteudo .grid-interna {
 			grid-template-columns: 0 repeat(11, minmax(1px, 5rem)) 0;
+			column-gap: 0 !important;
 		}
 		.conteudo .data {
 			grid-column: 3 / 12;
