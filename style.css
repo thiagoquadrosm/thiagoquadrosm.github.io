@@ -472,6 +472,7 @@ footer .footer p {
 		}
 		.conteudo .conteudo-foto {
 			grid-column: 2 / 13;
+			margin: 0.75rem 0;
 		}
 		header {
 			align-items: baseline;
