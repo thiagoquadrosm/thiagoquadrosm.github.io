@@ -417,6 +417,16 @@ footer .footer p {
 .colunaamenos {
 	grid-column: 3 / 12 !important;
 }
+.duascolunas, .trescolunas {
+	grid-template-columns: repeat(12, minmax(1px, 5rem)) !important;
+	row-gap: 1rem !important;
+}
+.duascolunas img, .duascolunas video {
+	grid-column: span 6 !important;
+}
+.trescolunas img, .trescolunas video {
+	grid-column: span 4 !important;
+}
 
 
 	@media only screen and (min-width: 1720px) {
@@ -510,6 +520,9 @@ footer .footer p {
 			grid-column: 2 / 12 !important;
 		}
 		.regina #regina1 {
+			grid-column: 2 / 12 !important;
+		}
+		.duascolunas img, .duascolunas video {
 			grid-column: 2 / 12 !important;
 		}
 	}
