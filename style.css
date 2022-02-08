@@ -525,6 +525,12 @@ footer .footer p {
 		.duascolunas img, .duascolunas video {
 			grid-column: 2 / 12 !important;
 		}
+		.trescolunas {
+			grid-column: 3 / 12 !important;
+		}
+		.trescolunas img, .trescolunas video {
+			grid-column: span 6 !important;
+		}
 	}
 	@media only screen and (max-height: 639px) {
 		.conteudo .grid {
