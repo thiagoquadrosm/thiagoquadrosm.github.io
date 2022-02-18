@@ -547,6 +547,19 @@ footer .footer p {
 			grid-column: 2 / 11;
 			align-self: end;
 		}
+		#foto-minha {
+			grid-row: 1;
+			grid-column: 3 / 7 !important;
+			align-self: baseline;
+			margin-top: 3rem;
+			margin-bottom: 1rem;
+		}
+		.sobre-txt {
+			grid-column: 3 / 11  !important;
+		}
+		h2.sobre-txt {
+			margin-top: 0;
+		}
 	}
 	@media only screen and (max-height: 639px) {
 		.conteudo .grid {
