@@ -219,8 +219,7 @@ header .header-direita p {
 }
 .conteudo #competencias li {
 	margin-bottom: 0.5rem;
-	max-width: calc(50% - 1rem);
-	flex-shrink: 2;
+	width: calc(50% - 1rem);
 }
 .conteudo h2 {
 	font-size: 2rem;
