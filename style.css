@@ -299,12 +299,18 @@ header .header-direita p {
 	font-weight: 400;
 	text-align: center;
 }
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
 footer .footer {
 	display: flex;
 	justify-content: space-between;
 	border-top: solid 2px var(--azul);
 	margin-top: 2rem;
 	padding: 0 0.75rem;
+	background-color: #FFF;
 }
 footer .footer p {
 	font-size: 0.9rem;
