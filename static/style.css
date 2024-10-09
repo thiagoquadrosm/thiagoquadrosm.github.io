@@ -286,6 +286,9 @@ header .header-direita p {
 	grid-column-gap: 1rem;
 	margin: 1.5rem 0;
 }
+.conteudo-foto video, .conteudo-foto img {
+    box-shadow: 0 5px 10px #00000025;
+}
 .conteudo .expediente {
 	grid-column: 6 / 9 !important;
 	margin-top: 2rem;

@@ -1,0 +1,107 @@
+{
+    "info": {
+        "h2": "tudo o que você precisa saber sobre o relatório da CPI da covid",
+        "imgDesk": "/assets/especial-cpi/tq_especia-cpi-2.png",
+        "imgMob": "/assets/especial-cpi/tq_especia-cpi-2m.jpg",
+        "externalLink": "https://www.nexojornal.com.br/especial/2021/10/19/Tudo-o-que-voc%C3%AA-precisa-saber-sobre-o-relat%C3%B3rio-da-CPI-da-Covid",
+        "company": "nexo jornal",
+        "year": "2021"
+    },
+    "content": [
+        {
+            "type": "p",
+            "text": "Como transformar um documento de quase 1300 páginas — de grande interesse público — em um conteúdo inteligível e navegável?"
+        },
+        {
+            "type": "p",
+            "text": "O desafio foi transformar o relatório da CPI da covid numa página especial, destacando os pontos mais importantes: os crimes relatados, os alvos de indiciamento e as possibilidades do relatório. E, além disso, não deixar de lado o contexto político, social e sanitário investigado pela comissão."
+        },
+        {
+            "type": "p",
+            "text": "A solução foi desmembrar e reorganizar as informações mais importantes.  Apresentá-las em um layout com menos recursos visuais como fotos e ilustrações, e mais recursos textuais e interativos."
+        },
+        {
+            "type": "img",
+            "imgDesk": "/assets/especial-cpi/especial_cpi-p1-desk.png",
+            "imgMob": "/assets/especial-cpi/especial_cpi-p1-mob.png"
+        },
+        {
+            "type": "img",
+            "imgDesk": "/assets/especial-cpi/especial_cpi-p2-desk.png",
+            "imgMob": "/assets/especial-cpi/especial_cpi-p2-mob.png"
+        },
+        {
+            "type": "img",
+            "imgDesk": "/assets/especial-cpi/especial_cpi-p3-desk.png",
+            "imgMob": "/assets/especial-cpi/especial_cpi-p3-mob.png"
+        },
+        {
+            "type": "img",
+            "imgDesk": "/assets/especial-cpi/especial_cpi-p4-desk.png",
+            "imgMob": "/assets/especial-cpi/especial_cpi-p4-mob.png"
+        },
+        {
+            "type": "h3",
+            "text": "navegação"
+        },
+        {
+            "type": "p",
+            "text": "Para tornar o conteúdo prontamente acessível, foi desenvolvido um menu sticky com âncoras para cada seção do relatório — o leitor não precisa descer a página toda para chegar até os conteúdos finais."
+        },
+        {
+            "type": "p",
+            "text": "Além da navegação, o menu também tem a função de localizar o leitor: ele detecta e mostra em que seção do especial se está navegando."
+        },
+        {
+            "type": "video",
+            "imgDesk": "/assets/especial-cpi/tq_especial-cpi_navegacao-desk.mp4",
+            "imgMob": "/assets/especial-cpi/tq_especial-cpi_navegacao-mob.mp4"
+        },
+        {
+            "type": "h3",
+            "text": "contador"
+        },
+        {
+            "type": "p",
+            "text": "A seção 'Linha do tempo da pandemia no Brasil' é longa e detalhada — passa por todos os dias chaves desde o início da pandemia e seus acontecimentos. Seu foco é ser um material de referência, mais do que uma leitura fluída."
+        },
+        {
+            "type": "p",
+            "text": "Para dar um contexto a cada um desses dias, foi desenvolvido ao lado do texto um contador, que mostra, naquele dia, quantas mortes por covid já haviam sido registradas no país."
+        },
+        {
+            "type": "p",
+            "text": "Seu impacto é acompanhar dia por dia o número de vítimas aumentando, mas também ver o número aumentar cada vez mais rápido em um scroll mais rápido."
+        },
+        {
+            "type": "video",
+            "imgDesk": "/assets/especial-cpi/tq_especial-cpi_contador-desk.mp4",
+            "imgMob": "/assets/especial-cpi/tq_especial-cpi_contador-mob.mp4"
+        },
+        {
+            "type": "h3",
+            "text": "caixas de conteúdo"
+        },
+        {
+            "type": "p",
+            "text": "Para organizar um conteúdo com diversos tópicos, foi escolhida uma organização por caixas, no lugar do texto corrido tradicional."
+        },
+        {
+            "type": "p",
+            "text": "Cada seção tem um conjunto de botões, que podem ser abertos e revelam uma caixa com o conteúdo. Para cada seção, a caixa precisa de um desenho diferente para acomodar os diferentes tipos de conteúdos."
+        },
+        {
+            "type": "p",
+            "text": "As caixas também permitem uma visão geral de cada seção — sem abrir os itens, é possível ver a grande quantidade de crimes investigados pela CPI, por exemplo."
+        },
+        {
+            "type": "video",
+            "imgDesk": "/assets/especial-cpi/tq_especial-cpi_caixas-desk.mp4",
+            "imgMob": "/assets/especial-cpi/tq_especial-cpi_caixas-mob.mp4"
+        },
+        {
+            "type": "expediente",
+            "text": "Este projeto foi desenvolvido usando as ferramentas Adobe Xd e Visual Studio Code. Layout em conjunto e sob direção de Rafaela Ranzani"
+        }
+    ]
+}
